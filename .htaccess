@@ -1,0 +1,6 @@
+RewriteEngine On
+CGIPassAuth On
+
+<IfModule mod_headers.c>
+    SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+</IfModule>
